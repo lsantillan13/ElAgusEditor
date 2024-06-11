@@ -1,0 +1,44 @@
+INICIO
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVEGACIÓN */
+ nav {
+    background-color: red;
+    width: auto;
+    height: 120px;
+    text-transform: uppercase;
+ }
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+ul li a {
+    padding: 2px;
+}
+
+a{
+    text-decoration: none;
+    /* color: #eee3b6; */
+    color: #fff;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+body{
+    /* background-color: #131313; */
+    background-color: #1d1d1d;
+}
+
+.HeaderImage {
+    width: 100%;
+}
+
+/* #vertical{
+    
+} */
