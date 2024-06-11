@@ -13,9 +13,11 @@
 </head>
 <body class="bg-[#000]">
     <!-- bg-[#1d1d1d] -->
-        <nav class="grid grid-flow-col justify-stretch w-auto">
+
+    <!-- NAVEGADOR DE COMPUTADORA -->
+        <nav class="grid grid-flow-col justify-stretch w-100 bg-[#000] z-20 sm:hidden lg:visible">
                 <!-- Logo -->
-                <ul class="w-min p-1 text-center">      
+                <ul class="w-100 p-1 text-center">      
                     <li class="text-white p-5 font-bold uppercase text-3xl"><a href="#">ElAgusEditor</a></li>
                 </ul>
             <!-- Action Links -->
@@ -93,6 +95,94 @@
                 </ul>
             <!-- Social Media Links -->
         </nav>
+
+    <!-- NAVEGADOR DE CELULAR -->
+        <nav class="grid grid-flow-col justify-stretch w-100 absolute -top-62 bg-[#000] z-20">
+                <!-- Logo -->
+                <ul class="w-100 p-1 text-center">      
+                    <li class="text-white p-5 font-bold uppercase text-3xl"><a href="#">ElAgusEditor</a></li>
+                </ul>
+
+                <ul>
+                    <button class="bg-red-500 p-2" onclick="alert('Hiciste click!')">
+                        <i class="fa-solid fa-bars" style="color: white; font-size: 36px; cursor: pointer;"></i>
+                    </button>
+                </ul>
+            <!-- Action Links -->
+                <ul class="w-auto p-2 text-xl font-semilight justify-center pl-10">
+                    <!-- Nav en Español
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                    -->
+
+                    <!-- Nav en Inglés -->
+                        <li class="p-4 px-3 text-white underline underline-offset-8 decoration-1 ">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="p-4 px-3 text-white hover:underline underline-offset-8 decoration-1">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="p-4 px-3 text-white hover:underline underline-offset-8 decoration-1 ">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="p-4 px-3 text-white hover:underline underline-offset-8 decoration-1 ">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="p-4 px-3 text-white hover:underline underline-offset-8 decoration-1 ">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="p-4 px-3 text-white hover:underline underline-offset-8 decoration-1 ">
+                            <a href="#">Pricing</a>
+                        </li>
+                    <!-- Features -->
+                        <!-- <li><a href="#">Blog</a></li> -->
+                </ul>
+                <ul class="flex justify-center hidden">
+                    <li class="py-4 px-1 text-xl text-white">
+                        <i class="text-[16px] not-italic font-thin">Contact</i>
+                    </li>
+                    <li class="py-4 px-3 text-2xl text-white">
+                        <a href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="p-5 px-2 relative">
+                        <hr id="vertical" style="border: none; border-left: 1px solid gray;" class="h-[20px] py-3">
+                    </li>
+                    <div class="relative flex w-auto text-xl">
+                        <li class="px-3 p-4 text-white font-bold underline underline-offset-8 uppercase">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="px-3 p-4 text-white font-bold underline underline-offset-8 uppercase">
+                            <a href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="px-3 p-4 text-white font-bold underline underline-offset-8 uppercase">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="px-3 p-4 text-white font-bold underline underline-offset-8 uppercase">
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="px-3 p-4 text-white font-bold underline underline-offset-8 uppercase">
+                            <a href="#">
+                                <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> 
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            <!-- Social Media Links -->
+        </nav>
     <!-- Contenedor 1 -->
     <section>
         <div class="w-full h-[80.5vh]">
@@ -111,7 +201,7 @@
     </section>
 
 
-   
+   <!-- Contenedor 2 -->
 <section class="h-screen w-100 bg-white overflow-x-hidden hidden">
     <section class="w-100">
         <div class="mx-auto max-w-100 px-4 sm:px-6 lg:px-8 ">
@@ -230,12 +320,12 @@
     </section>
 </section>
 
-        <div class="bg-black">
+        <div class="bg-black z-10">
 
             <section id="features"
                 class="relative block  border-t border-b border-neutral-900 bg-neutral-900/30">
                 <div class="relative mx-auto max-w-5xl text-center">
-                    <span class="text-gray-400 mb-2 flex items-center justify-center font-medium uppercase tracking-wider">
+                    <span class="text-gray-400 m-4 flex items-center justify-center font-medium uppercase tracking-wider">
                         <p class="text-sm font-bold uppercase tracking-widest text-center text-gray-700">
                             Thinking about work with us?</p>
                     </span>
@@ -344,7 +434,7 @@
 }
 </style>
 
-<div class=" flex items-center justify-center px-5 py-5">
+<div class=" flex items-center justify-center w-full mx-5 py-5">
     <div class="w-screen mx-auto rounded-3xl shadow-lg px-10 pt-16 pb-10 text-gray-600" x-data="app()">
         <div class="overflow-hidden relative mb-10">
             <div class="overflow-hidden relative cursor-grab relative" @pointerdown="touchstartX=$event.screenX,touchstartY=$event.screenY" @pointerup="touchendX=$event.screenX,touchendY=$event.screenY,$nextTick(()=>handleSwipe())">
